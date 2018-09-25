@@ -1,0 +1,10 @@
+<h2>Edit Product</h2>
+<hr>
+<form (submit)="submitEditProduct()">
+  <p *ngFor="let error of errors">{{ error }}</p>
+  <h4>Title: <input type="text" name="name" [(ngModel)]="editProduct.name"></h4>
+  <h4>Price: <input type="number" name="price" [(ngModel)]="editProduct.price"></h4>
+  <h4>Image Url: <input type="text" name="imageUrl" [(ngModel)]="editProduct.imageUrl"></h4>
+  <input type="submit" value="Create">
+</form>
+<button (click)="onEditDelete(editProduct)">Delete</button>

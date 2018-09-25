@@ -1,0 +1,9 @@
+<h2>Create a New Product</h2>
+<hr>
+<form (submit)="submitProduct()">
+  <p *ngFor="let error of errors">{{ error }}</p>
+  <h4>Title: <input type="text" name="name" [(ngModel)]="newProduct.name"></h4>
+  <h4>Price: <input type="number" name="price" [(ngModel)]="newProduct.price"></h4>
+  <h4>Image Url: <input type="text" name="imageUrl" [(ngModel)]="newProduct.imageUrl"></h4>
+  <input type="submit" value="Create">
+</form>

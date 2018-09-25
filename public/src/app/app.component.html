@@ -1,0 +1,13 @@
+<body>
+  <div id ="container">
+    <a [routerLink]="['/']">Home</a>
+    <a [routerLink]="['/list']">Product List</a>
+    <a [routerLink]="['/list', 'new']">Product Creation</a>
+  </div>
+  <fieldset>
+    <legend>router-outlet</legend>
+    <div id="outlet">
+      <router-outlet></router-outlet>
+    </div>
+  </fieldset>
+</body>

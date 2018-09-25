@@ -1,0 +1,19 @@
+#box {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    width: 45%;
+}
+img {
+    background-size: contain;
+    width: 100%;
+}
+h3 {
+    margin: 5px;
+}
+button {
+    width: 70px;
+    height: 20px;
+    margin: 5px;
+}
